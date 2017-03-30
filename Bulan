@@ -1,0 +1,29 @@
+#include <iostream>
+#include<string.h>
+
+using namespace std;
+int main(){
+int bulan;
+string bul;
+
+cout<<"masukan bulan:";
+cin>>bulan;
+
+
+switch(bulan){
+case 1:
+    bul= "januari";
+    cout<<"bulan ke - "<<bulan<<" adalah "<<bul<<endl;
+    break;
+case 2:
+   bul= "februari";
+    cout<<"bulan ke - "<<bulan<<" adalah "<<bul<<endl;
+    break;
+    case 3:
+    bul= "maret";
+    cout<<"bulan ke - "<<bulan<<" adalah "<<bul<<endl;
+    break;
+
+    default : cout<<"tidak ada";
+}return 0;}
+
