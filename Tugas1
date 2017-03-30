@@ -1,0 +1,38 @@
+
+#include "stdio.h" //
+
+main(){
+ int uts;
+ int uas;
+ int tugas;
+ int Tes;
+ double na;
+ printf("Masukkan nilai Tes : ");
+ scanf("%d",&Tes);
+ printf("Masukkan nilai UTS  : ");
+ scanf("%d",&uts);
+ printf("Masukkan nilai UAS  : ");
+ scanf("%d",&uas);
+ printf("Masukkan nilai Tugas: ");
+ scanf("%d",&tugas);
+ na=(0.20*Tes)+(0.30*uts)+(0.30*uas)+(0.20*tugas);
+ printf("\n          Nilai Akhir : %.2lf\n",na);
+ printf(" Indeks Nilai: ");
+ if(na>=80 && na<=100){
+  printf("A\n\n");
+ }else if(na>=70 && na<80){
+  printf("B\n\n");
+ }else if(na>=50 && na<70){
+  printf("C\n\n");
+ }else if(na>=40 && na<50){
+  printf("D\n\n");
+ }else if(na>=0 && na<40){
+  printf("E\n\n");
+ }
+ else{
+  printf("N/A\n\n");
+ }
+
+
+ return 0;
+}
